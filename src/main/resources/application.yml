@@ -1,0 +1,20 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/market
+    username: market
+    password: 123
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+upload:
+  server:
+    folder: D:\upload
+jwt:
+  token:
+    secret: cleanCode
+    validity: 86400000
